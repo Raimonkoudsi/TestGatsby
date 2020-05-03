@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Monoton&family=Oleo+Script:wght@700&family=Righteous&display=swap');
+
+:root {
+    --secondary: #598426;
+    --background: #292929;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*HEADER*/
+
+.headerWallbang {
+    background-color: black;
+    padding-left:8%;
+    padding-right:8%;
+    margin-right: 2.6vh;
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    width: 60px;
+}
+
+.headerLinks {
+    font-size: 120%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+
+.headerLinks:hover {
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-caption {
+    bottom:0px;
+    top:0px;
+    margin:0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    top: 0px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.area {
+
+    background-color: var(--background);
+
+}
+
+.bgTextAlignRight {
+    right: 60%;
+}
+
+.bgTextAlignLeft {
+    left: 60%;
+}
+
+.bgTextAlignLeft .sliderText .titleCarousel {
+    margin-top: 4vw;
+}
+
+.bgText {
+    position: absolute;
+    background-color: #000000a8;
+    bottom: 0px;
+    top: 0px;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 45%;
+    height: 150%;
+    margin-top: 0px;
+}
+
+.sliderText {
+    position: absolute;
+    right: 100%;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+.titleCarousel {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    display: block;
+    font-weight: bold;
+}
+
+.textCarousel {
+    display: block;
+}
+
+.textCarouselFinal {
+    display: block;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+    .textCarousel {
+        font-size: 14px;
+    }
+}
+*/
+@media only screen and (min-width:991px) {
+    .titleCarousel
+    {
+        font-size: 24px;
+    }
+    .textCarousel {
+        font-size: 20px;
+    }
+    .textCarouselFinal {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width: 991px) {
+    .titleCarousel
+    {
+        font-size: 20px;
+    }
+    .textCarousel {
+        font-size: 14px;
+    }
+    .textCarouselFinal {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 767px) {
+    .titleCarousel
+    {
+        font-size: 12px;
+    }
+    .textCarousel {
+        font-size: 11px;
+    }
+    .textCarouselFinal {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width: 600px) {
+    .titleCarousel
+    {
+        font-size: 2vw;
+    }
+    .textCarousel {
+        font-size: 1.8vw;
+    }
+    .textCarouselFinal {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width: 500px) {
+    .titleCarousel
+    {
+        font-size: 2vw;
+    }
+    .textCarousel {
+        font-size: 1.6vw;
+    }
+    .textCarouselFinal {
+        font-size: 1.3vw;
+    }
+
+    .sliderText {
+        position: relative;
+        display: none;
+    }
+    .bgText {
+        position: relative;
+        display: none;
+    }
+
+}
+
+
+
+.header{
+    margin-top: 14%;
+}
+
+.title-header img {
+    width: 70%;
+    display:block;
+    margin:auto;
+}
+
+
+
+
+
+/* ANIMATIONS */
+@-webkit-keyframes fadeIn {
+    from {
+        color: white;
+    }
+  
+    to {
+        color: blue;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      color: blue;
+    }
+  
+    to {
+      color: white;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
