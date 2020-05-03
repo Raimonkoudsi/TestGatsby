@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import repos from '../components/About';
-import Repo from './AboutRepos';
+import repos from './about';
+import Repo from './aboutrepos';
 
 export default () => {
 

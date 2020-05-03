@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
 import bgCelda from '../imgs/background/3.png';
-import Title from './Title';
-import Slider from './Slider';
+import Title from './title';
+import Slider from './slider';
 //chaNGES
 
 import ReactResizeDetector from 'react-resize-detector';
