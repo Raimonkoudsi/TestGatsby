@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "../components/Header.js";
-import Slider from '../components/Slider';
-import Title from '../components/Title';
-import Parallax from "../components/Parallax";
+import Header from "../components/header";
+import Parallax from "../components/parallax";
 
 
 export default () => (
