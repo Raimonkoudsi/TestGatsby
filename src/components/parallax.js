@@ -14,12 +14,18 @@ class ParallaxBackground extends React.Component {
 
     // Don't call this.setState() here!
     //this.offsetY=0;
-    this.state = {width:  window.innerWidth};
+    if (typeof window !== 'undefined') {
+      this.state = {width:  window.innerWidth};
 
+ 
+    }
     this.onResize();
+
   }
 
   onResize = () => {
+
+    if (typeof window !== 'undefined') {
     this.setState({ width: window.innerWidth});
 
     if(this.state.width<=1500 && this.state.width>=700)
@@ -46,6 +52,7 @@ class ParallaxBackground extends React.Component {
     {
         this.offsetY=0.32;
     }
+  }
 
     return this.offsetY;
 
