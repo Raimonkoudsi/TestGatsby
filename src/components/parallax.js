@@ -83,7 +83,7 @@ class ParallaxBackground extends React.Component {
         </ParallaxLayer>
 
         <ParallaxLayer offset={3} speed={0}>
-    <span>Window size: {this.state.width} x {offset}</span>
+    <span>Window size: {offset}</span>
         </ParallaxLayer>
 
 
