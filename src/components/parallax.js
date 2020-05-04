@@ -57,6 +57,14 @@ class ParallaxBackground extends React.Component {
       {
           this.offsetY=0.32;
       }
+      if(this.state.width<=399 && this.state.width>=300)
+      {
+          this.offsetY=0.28;
+      }
+      if(this.state.width<=299 && this.state.width>=150)
+      {
+          this.offsetY=0.25;
+      }
     }
 
     return this.offsetY;
