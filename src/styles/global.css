@@ -18,12 +18,12 @@ body {
     background-color: black;
     padding-left:8%;
     padding-right:8%;
-    margin-right: 2.6vh;
+    /*margin-right: 2.6vh;*/
     opacity: 0.8;
 }
 
 .navbar-brand {
-    width: 60px;
+    /*width: 60px;*/
 }
 
 .headerLinks {
