@@ -14,10 +14,12 @@ class ParallaxBackground extends React.Component {
 
     // Don't call this.setState() here!
     //this.offsetY=0;
-    if (typeof window !== 'undefined') {
-      this.state = {width:  window.innerWidth};
+    if (typeof window !== 'undefined' || screen !== 'undefined') {
 
- 
+
+      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+      this.state = {width:  widthScreen};
     }
     this.onResize();
 
@@ -25,34 +27,37 @@ class ParallaxBackground extends React.Component {
 
   onResize = () => {
 
-    if (typeof window !== 'undefined') {
-    this.setState({ width: window.innerWidth});
+    if (typeof window !== 'undefined' || screen !== 'undefined') {
 
-    if(this.state.width<=1500 && this.state.width>=700)
-    {
-        this.offsetY=1;
+      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+      this.setState({ width: widthScreen});
+
+      if(this.state.width<=1500 && this.state.width>=700)
+      {
+          this.offsetY=1;
+      }
+      if(this.state.width<=800 && this.state.width>=701)
+      {
+          this.offsetY=0.50;
+      }
+      if(this.state.width<=700 && this.state.width>=600)
+      {
+          this.offsetY=0.45;
+      }
+      if(this.state.width<=600 && this.state.width>=572)
+      {
+          this.offsetY=0.42;
+      }
+      if(this.state.width<=571 && this.state.width>=520)
+      {
+          this.offsetY=0.38;
+      }
+      if(this.state.width<=519 && this.state.width>=400)
+      {
+          this.offsetY=0.32;
+      }
     }
-    if(this.state.width<=800 && this.state.width>=701)
-    {
-        this.offsetY=0.50;
-    }
-    if(this.state.width<=700 && this.state.width>=600)
-    {
-        this.offsetY=0.45;
-    }
-    if(this.state.width<=600 && this.state.width>=572)
-    {
-        this.offsetY=0.42;
-    }
-    if(this.state.width<=571 && this.state.width>=520)
-    {
-        this.offsetY=0.38;
-    }
-    if(this.state.width<=519 && this.state.width>=400)
-    {
-        this.offsetY=0.32;
-    }
-  }
 
     return this.offsetY;
 
