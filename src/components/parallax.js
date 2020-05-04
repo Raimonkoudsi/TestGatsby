@@ -14,7 +14,7 @@ class ParallaxBackground extends React.Component {
 
     // Don't call this.setState() here!
     //this.offsetY=0;
-    if (typeof window !== 'undefined' || screen !== 'undefined') {
+    if (typeof window !== 'undefined' || typeof screen !== 'undefined') {
 
 
       var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -27,7 +27,7 @@ class ParallaxBackground extends React.Component {
 
   onResize = () => {
 
-    if (typeof window !== 'undefined' || screen !== 'undefined') {
+    if (typeof window !== 'undefined' || typeof screen !== 'undefined') {
 
       var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
