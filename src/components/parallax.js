@@ -32,37 +32,53 @@ class ParallaxBackground extends React.Component {
 
       this.setState({ width: widthScreen});
 
-      if(this.state.width<=1500 && this.state.width>=700)
+      if(this.state.width<=2000 && this.state.width>=1201)
       {
           this.offsetY=1;
       }
+      if(this.state.width<=1200 && this.state.width>=1101)
+      {
+          this.offsetY=0.8;
+      }
+      if(this.state.width<=1100 && this.state.width>=1001)
+      {
+          this.offsetY=0.75;
+      }
+      if(this.state.width<=1000 && this.state.width>=901)
+      {
+          this.offsetY=0.65;
+      }
+      if(this.state.width<=900 && this.state.width>=801)
+      {
+          this.offsetY=0.60;
+      }
       if(this.state.width<=800 && this.state.width>=701)
       {
-          this.offsetY=0.50;
+          this.offsetY=0.64;
       }
       if(this.state.width<=700 && this.state.width>=600)
       {
-          this.offsetY=0.45;
+          this.offsetY=0.62;
       }
       if(this.state.width<=600 && this.state.width>=572)
       {
-          this.offsetY=0.42;
+          this.offsetY=0.6;
       }
       if(this.state.width<=571 && this.state.width>=520)
       {
-          this.offsetY=0.38;
+          this.offsetY=0.6;
       }
       if(this.state.width<=519 && this.state.width>=400)
       {
-          this.offsetY=0.32;
+          this.offsetY=0.6;
       }
       if(this.state.width<=399 && this.state.width>=300)
       {
-          this.offsetY=0.28;
+          this.offsetY=0.5;
       }
       if(this.state.width<=299 && this.state.width>=150)
       {
-          this.offsetY=0.25;
+          this.offsetY=0.5;
       }
     }
 
@@ -96,14 +112,16 @@ class ParallaxBackground extends React.Component {
           <Title />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={offset} speed={0}>
+            <About />
+        </ParallaxLayer>
+
 
           <ParallaxLayer offset={3} speed={0}>
             <span>Window size: {offset}</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5} speed={0}>
-            <About />
-          </ParallaxLayer>
+
 
       </Parallax>
     </ReactResizeDetector>

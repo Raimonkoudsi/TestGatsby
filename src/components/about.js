@@ -5,9 +5,10 @@ import Repo from './aboutrepos';
 export default () => {
 
     return(
-    <div className="max-w-4xl mx-auto mt-12 text-center">
+    <div className="page-about">
             <header className="text-center">
-                <h2 className="text-3xl mb-5 font-bold text-white header-repositories">Mis Proyectos en </h2>
+                <h2 className="header-repositories">ABOUT THE GAME</h2>
+                <h3 className="text-repositories">Catarsis is a Post-Apocaliptic Shoot n' fight where you live the broken politics and fight against the humans who transforms in their worst fears, as you try to recover any sign of identity within yourself.</h3>
             </header>
             <ul className="container-repositories">
                 {
