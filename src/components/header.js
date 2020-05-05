@@ -3,8 +3,6 @@ import {Navbar, Nav} from 'react-bootstrap';
 
 import Icono from "../imgs/header/wallbang-logo.png";
 
-//changes
-
 
 export default () => (
         <Navbar className="fixed-top navbar-dark headerWallbang" expand="lg">

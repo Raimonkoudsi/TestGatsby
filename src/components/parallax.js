@@ -3,6 +3,8 @@ import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
 import bgCelda from '../imgs/background/3.png';
 import Title from './title';
 import Slider from './slider';
+import About from './about';
+import AboutRepos from './aboutrepos';
 //chaNGES
 
 import ReactResizeDetector from 'react-resize-detector';
@@ -12,12 +14,9 @@ class ParallaxBackground extends React.Component {
   constructor(props) {
     super(props);
 
-    // Don't call this.setState() here!
-    //this.offsetY=0;
-    if (typeof window !== 'undefined' || typeof screen !== 'undefined') {
+    if (typeof window !== 'undefined') {
 
-
-      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : 0;
 
       this.state = {width:  widthScreen};
     }
@@ -27,9 +26,9 @@ class ParallaxBackground extends React.Component {
 
   onResize = () => {
 
-    if (typeof window !== 'undefined' || typeof screen !== 'undefined') {
+    if (typeof window !== 'undefined') {
 
-      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      var widthScreen = (window.innerWidth > 0) ? window.innerWidth : 0;
 
       this.setState({ width: widthScreen});
 
@@ -77,31 +76,36 @@ class ParallaxBackground extends React.Component {
       var offset=this.offsetY;
     return(
 
+
+
     <ReactResizeDetector handleWidth handleHeight onResize={this.onResize}> 
-    <Parallax pages={6} scrolling={true} vertical ref={ref => (this.parallax = ref)}> 
+
+      <Parallax pages={6} scrolling={true} vertical ref={ref => (this.parallax = ref)}> 
 
 
 
-    
-      <ParallaxLayer offset={0} speed={-0.4}>
-        <img src={bgCelda} style={{width: '100%', marginLeft: '0%' }} />
-      </ParallaxLayer>
-
-      <ParallaxLayer offset={0.05} speed={1}>
-        <Title />
-      </ParallaxLayer>
       
-        <ParallaxLayer offset={offset} speed={0}>
-          <Slider />
+        <ParallaxLayer offset={0} speed={-0.4}>
+          <div className="bg-parallax">
+            <img src={bgCelda} className="bg-title" />
+          </div>
+
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={0}>
-    <span>Window size: {offset}</span>
+        <ParallaxLayer offset={0.05} speed={1}>
+          <Title />
         </ParallaxLayer>
 
 
+          <ParallaxLayer offset={3} speed={0}>
+            <span>Window size: {offset}</span>
+          </ParallaxLayer>
 
-    </Parallax>
+          <ParallaxLayer offset={5} speed={0}>
+            <About />
+          </ParallaxLayer>
+
+      </Parallax>
     </ReactResizeDetector>
     )
   }
@@ -117,3 +121,4 @@ class ParallaxBackground extends React.Component {
 };
 
 export default ParallaxBackground;
+

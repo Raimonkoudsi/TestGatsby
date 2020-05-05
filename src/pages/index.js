@@ -8,16 +8,10 @@ export default () => (
 
 
     <div>
-
-
         <Header />
         <Parallax />
-
-        
     </div>
 
 )
-
-//prueba
 
 
