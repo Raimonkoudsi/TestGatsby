@@ -112,7 +112,7 @@ class ParallaxBackground extends React.Component {
           <Title />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={offset} speed={0}>
+        <ParallaxLayer offset={1} speed={0}>
             <About />
         </ParallaxLayer>
 
