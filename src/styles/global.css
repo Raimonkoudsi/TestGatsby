@@ -230,7 +230,7 @@ body::-webkit-scrollbar {
 }
 
 /* telefono horizontal */
-@media only screen and (max-height: 399px) and (min-height: 200px) {
+@media only screen and (max-height: 399px) and (min-height: 100px) {
     .header{
         margin-top: 5%;
     }
