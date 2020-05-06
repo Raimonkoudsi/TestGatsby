@@ -133,6 +133,45 @@ body::-webkit-scrollbar {
     top: -80px;
 }
 
+/* telefono horizontal */
+@media only screen and (max-height: 400px) and (min-height: 100px) {
+    .header{
+        margin-top: 8%;
+    }
+
+
+    .title-header img {
+        width: 50%;
+    }
+
+    .text-title {
+        font-size: 4vw;
+    }
+
+    .btn-title {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-height: 480px) and (min-height: 401px) {
+    .header{
+        margin-top: 15%;
+    }
+
+
+    .title-header img {
+        width: 50%;
+    }
+
+    .text-title {
+        font-size: 4vw;
+    }
+
+    .btn-title {
+        width: 200px;
+    }
+}
+
 @media only screen and (min-width: 800px) {
     .header{
         margin-top: 20%;
@@ -222,45 +261,6 @@ body::-webkit-scrollbar {
 
     .text-title {
         font-size: 10vw;
-    }
-
-    .btn-title {
-        width: 200px;
-    }
-}
-
-/* telefono horizontal */
-@media only screen and (max-height: 400px) and (min-height: 100px) {
-    .header{
-        margin-top: 8%;
-    }
-
-
-    .title-header img {
-        width: 50%;
-    }
-
-    .text-title {
-        font-size: 4vw;
-    }
-
-    .btn-title {
-        width: 200px;
-    }
-}
-
-@media only screen and (max-height: 500px) and (min-height: 401px) {
-    .header{
-        margin-top: 15%;
-    }
-
-
-    .title-header img {
-        width: 50%;
-    }
-
-    .text-title {
-        font-size: 4vw;
     }
 
     .btn-title {
