@@ -237,11 +237,11 @@ body::-webkit-scrollbar {
 
 
     .title-header img {
-        width: 100%;
+        width: 50%;
     }
 
     .text-title {
-        font-size: 10vw;
+        font-size: 4vw;
     }
 
     .btn-title {
