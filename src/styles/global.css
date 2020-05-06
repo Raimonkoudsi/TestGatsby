@@ -228,6 +228,26 @@ body::-webkit-scrollbar {
         width: 200px;
     }
 }
+
+/* telefono horizontal */
+@media only screen and (max-height: 399px) and (min-height: 200px) {
+    .header{
+        margin-top: 5%;
+    }
+
+
+    .title-header img {
+        width: 100%;
+    }
+
+    .text-title {
+        font-size: 10vw;
+    }
+
+    .btn-title {
+        width: 200px;
+    }
+}
 /**/
 
 
