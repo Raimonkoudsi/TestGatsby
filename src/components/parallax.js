@@ -5,6 +5,7 @@ import Title from './title';
 import Slider from './slider';
 import About from './about';
 import AboutRepos from './aboutrepos';
+import Team from './team';
 //chaNGES
 
 import ReactResizeDetector from 'react-resize-detector';
@@ -113,11 +114,17 @@ class ParallaxBackground extends React.Component {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0}>
+          <div className="area">
             <About />
+            <div classname="area2">
+              <Slider />
+            </div>
+            <Team />
+          </div>
         </ParallaxLayer>
 
 
-          <ParallaxLayer offset={3} speed={0}>
+          <ParallaxLayer offset={5} speed={0}>
             <span>Window size: {offset}</span>
           </ParallaxLayer>
 

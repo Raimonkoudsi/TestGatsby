@@ -17,11 +17,6 @@ export default () => {
                     })
                 }
             </ul>
-            <div align="center">
-                <a class="button_b" href="https://github.com/raimonkoudsi" target="_blank" rel="nofollow noopener">
-                    Ver más en Github
-                </a>
-            </div>
     </div>
     );
 };

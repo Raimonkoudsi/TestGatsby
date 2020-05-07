@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Squada+One&family=Yanone+Kaffeesatz:wght@300&family=Poppins&family=Staatliches&family=Lobster&family=Anton&family=Monoton&family=Oleo+Script:wght@700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Squada+One&family=Yanone+Kaffeesatz:wght@300&family=Poppins&family=Staatliches&family=Lobster&family=Anton&family=Monoton&family=Teko:wght@300&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 :root {
     --secondary: #598426;
@@ -105,11 +107,15 @@ body::-webkit-scrollbar {
     font-family: 'Righteous', cursive;
     background-color: var(--background);
     border-color: transparent;
+    border-color: black;
+
+    transition: 0.5s;
 }
 
 .btn-title:hover {
     background-color: var(--green);
-    border-color: transparent;
+    background: var(--green);
+    border-color: black;
 }
 
 .btn-title p {
@@ -272,7 +278,6 @@ body::-webkit-scrollbar {
     }
 }
 /**/
-/**/
 
 
 
@@ -298,9 +303,10 @@ body::-webkit-scrollbar {
 
 .text-repositories {
     color: white;
+    opacity: 0.8;
     padding-bottom: 40px;
-    font-size: 200%;
-    font-family: monospace;
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
 }
 
 
@@ -320,7 +326,18 @@ body::-webkit-scrollbar {
     .container-repositories {
         grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     }
-  }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .container-repositories {
+        grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+    }
+
+    .individual-repositories {
+        margin-bottom: 100px;
+    }
+}
 
 .individual-repositories {
     text-align: center;
@@ -329,17 +346,30 @@ body::-webkit-scrollbar {
 .title-repositories {
     font-family: 'Squada One',sans-serif;
     color: var(--secondary);
-    font-size: 2vw;
-}
-
-.image-about {
-
+    font-size: 35px;
+    margin-bottom: 5px;
 }
 
 .description-about {
     height: 1.5em;
     margin:40px;
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.2em;
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px) {
+
+    .description-about {
+        font-size: 23px;
+    }
+    .title-repositories {
+        font-size: 30px;
+    }
 }
 
 
@@ -360,13 +390,15 @@ body::-webkit-scrollbar {
     bottom: 0px;
     top: 0px;
     text-align: center;
-    padding-top: 10%;
+    margin-top: 6%;
 }
 
 .area {
-
     background-color: var(--background);
+}
 
+.area2 {
+    z-index: 100;
 }
 
 .bgTextAlignRight {
@@ -386,13 +418,12 @@ body::-webkit-scrollbar {
     background-color: #000000a8;
     bottom: 0px;
     top: 0px;
-    z-index: 10;
+    z-index: -100;
     padding-top: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     width: 45%;
-    height: 150%;
     margin-top: 0px;
 }
 
@@ -416,17 +447,20 @@ body::-webkit-scrollbar {
 
 .titleCarousel {
     padding-top: 20%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     display: block;
-    font-weight: bold;
+    font-family: 'Squada One',sans-serif;
+
 }
 
 .textCarousel {
     display: block;
+    font-family: 'Teko', sans-serif;
 }
 
 .textCarouselFinal {
     display: block;
+    font-family: 'Teko', sans-serif;
 }
 
 /*
@@ -439,66 +473,35 @@ body::-webkit-scrollbar {
 @media only screen and (min-width:991px) {
     .titleCarousel
     {
-        font-size: 24px;
+        padding-top: 15%;
+        font-size: 35px;
     }
     .textCarousel {
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 30px;
     }
     .textCarouselFinal {
-        font-size: 18px;
+        font-size: 26px;
+        line-height: 30px;
     }
 }
 
 @media only screen and (min-width:767px) and (max-width: 991px) {
     .titleCarousel
     {
+        font-size: 28px;
+    }
+    .textCarousel {
         font-size: 20px;
-    }
-    .textCarousel {
-        font-size: 14px;
+        line-height: 20px;
     }
     .textCarouselFinal {
-        font-size: 12px;
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 
-@media only screen and (min-width:600px) and (max-width: 767px) {
-    .titleCarousel
-    {
-        font-size: 12px;
-    }
-    .textCarousel {
-        font-size: 11px;
-    }
-    .textCarouselFinal {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (min-width:500px) and (max-width: 600px) {
-    .titleCarousel
-    {
-        font-size: 2vw;
-    }
-    .textCarousel {
-        font-size: 1.8vw;
-    }
-    .textCarouselFinal {
-        font-size: 1.5vw;
-    }
-}
-
-@media only screen and (min-width:0px) and (max-width: 500px) {
-    .titleCarousel
-    {
-        font-size: 2vw;
-    }
-    .textCarousel {
-        font-size: 1.6vw;
-    }
-    .textCarouselFinal {
-        font-size: 1.3vw;
-    }
+@media only screen and (min-width:0px) and (max-width: 767px) {
 
     .sliderText {
         position: relative;
@@ -508,7 +511,6 @@ body::-webkit-scrollbar {
         position: relative;
         display: none;
     }
-
 }
 
 
@@ -517,31 +519,49 @@ body::-webkit-scrollbar {
 
 
 
+/* MEMBERS */
+  
+.cards {
+    position: absolute;
+    background-color: var(--background);
+    z-index: 10;
+    padding-top: 0;
+    margin-top: -26px;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    width: 100%;
+}
 
+.card-image {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 
-/* ANIMATIONS */
-@-webkit-keyframes fadeIn {
-    from {
-        color: white;
-    }
-  
-    to {
-        color: blue;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      color: blue;
-    }
-  
-    to {
-      color: white;
-    }
-  }
-  
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
 
+    border-radius: 50%;
+}
+
+.card-image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.card-description {
+    background-color: var(--background);
+}
+
+.card {
+    border-radius: 50%;
+}
+
+.card-individual {
+    width: 20%;
+}
+
+@media only screen and (max-width:991px) {
+
+}
