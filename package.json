@@ -21,11 +21,12 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-resize-detector": "^4.2.3",
+    "react-scroll": "^1.7.16",
     "react-spring": "^8.0.27"
   },
   "devDependencies": {
     "prettier": "2.0.5",
-   "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0"
   },
   "keywords": [
     "gatsby"

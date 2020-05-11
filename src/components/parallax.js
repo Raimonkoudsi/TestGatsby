@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
 import bgCelda from '../imgs/background/3.png';
 import Title from './title';
 import Slider from './slider';
 import About from './about';
-import AboutRepos from './aboutrepos';
 import Team from './team';
 //chaNGES
-
 import ReactResizeDetector from 'react-resize-detector';
+
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class ParallaxBackground extends React.Component {
 
@@ -21,9 +21,11 @@ class ParallaxBackground extends React.Component {
 
       this.state = {width:  widthScreen};
     }
+
     this.onResize();
 
   }
+
 
   onResize = () => {
 
@@ -93,21 +95,19 @@ class ParallaxBackground extends React.Component {
       var offset=this.offsetY;
     return(
 
+      <div>
 
 
-    <ReactResizeDetector handleWidth handleHeight onResize={this.onResize}> 
+    <ReactResizeDetector handleWidth handleHeight onResize={this.onResize} > 
 
-      <Parallax pages={6} scrolling={true} vertical ref={ref => (this.parallax = ref)}> 
+      <Parallax pages={6} scrolling={true} vertical ref={ref => (this.parallax = ref)} id="containerElement"> 
 
-
-
-      
         <ParallaxLayer offset={0} speed={-0.4}>
           <div className="bg-parallax">
             <img src={bgCelda} className="bg-title" />
           </div>
-
         </ParallaxLayer>
+
 
         <ParallaxLayer offset={0.05} speed={1}>
           <Title />
@@ -115,23 +115,37 @@ class ParallaxBackground extends React.Component {
 
         <ParallaxLayer offset={1} speed={0}>
           <div className="area">
-            <About />
+            <div>
+              <About />
+            </div>
+
             <div classname="area2">
               <Slider />
             </div>
-            <Team />
+
+              <Team />
+
           </div>
         </ParallaxLayer>
 
 
           <ParallaxLayer offset={5} speed={0}>
             <span>Window size: {offset}</span>
+
+
+            <Link activeClass="active" to="first" spy={false} smooth={"easeOutQuad"} duration={1000} containerId="containerElement">1st element</Link>
           </ParallaxLayer>
 
 
 
       </Parallax>
+
+
     </ReactResizeDetector>
+
+    <div name="first"></div>
+            
+    </div>
     )
   }
 

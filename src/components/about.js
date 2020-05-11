@@ -10,7 +10,7 @@ export default () => {
                 <h2 className="header-repositories">ABOUT THE GAME</h2>
                 <h3 className="text-repositories">Catarsis is a Post-Apocaliptic Shoot n' fight where you live the broken politics and fight against the humans who transforms in their worst fears, as you try to recover any sign of identity within yourself.</h3>
             </header>
-            <ul className="container-repositories">
+            <ul className="container-repositories" id="team">
                 {
                     repos.map((repo)=>{
                     return <Repo repo= {repo} key={repo.id} />

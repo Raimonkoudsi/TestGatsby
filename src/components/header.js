@@ -3,6 +3,8 @@ import {Navbar, Nav} from 'react-bootstrap';
 
 import Icono from "../imgs/header/wallbang-logo.png";
 
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 
 export default () => (
         <Navbar className="fixed-top navbar-dark headerWallbang" expand="lg">
@@ -12,7 +14,7 @@ export default () => (
             <Nav className="mr-auto">
             </Nav>
             <Nav>
-                <a href="#about" className="headerLinks">About</a>
+                <Link className="headerLinks" activeClass="headerActive" to={"team"} spy={true} smooth={"easeOutQuad"} duration={1000} containerId="containerElement"><p>About</p></Link>
                 <a href="#team" className="headerLinks">Team</a>
                 <a href="#team" className="headerLinks">Presskit</a>
                 <a href="#team" className="headerLinks">Blog</a>

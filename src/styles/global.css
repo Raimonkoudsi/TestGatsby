@@ -32,10 +32,16 @@ body::-webkit-scrollbar {
     padding-right:8%;
     /*margin-right: 2.6vh;*/
     opacity: 0.8;
+
+    overflow: hidden;
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    top: 0; /* At the top */
+    z-index: 99;
 }
 
 .navbar-brand {
-    width: 60px;
+    width: 30%;
     margin-right: 0;
     margin-bottom: 0;
 }
@@ -61,6 +67,14 @@ body::-webkit-scrollbar {
     color: var(--secondary);
     text-decoration: none;
     font-family: 'Righteous', cursive;
+}
+
+.headerLinks p {
+    color: white;
+}
+
+.headerActive p {
+    color: yellow;
 }
 
 
@@ -520,18 +534,28 @@ body::-webkit-scrollbar {
 
 
 /* MEMBERS */
+
+.container-team {
+
+}
   
 .cards {
-    position: absolute;
     background-color: var(--background);
     z-index: 10;
-    padding-top: 0;
     margin-top: -26px;
     padding-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
-    justify-content: center;
+
+
+    position: relative;
     width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw,1fr));
+    grid-gap: 0 10%;
+    margin-left: 0;
+
+    text-align: center;
 }
 
 .card-image {
@@ -543,6 +567,8 @@ body::-webkit-scrollbar {
     padding: 0;
 
     border-radius: 50%;
+
+    border: 10px solid white;
 }
 
 .card-image:hover {
@@ -554,14 +580,14 @@ body::-webkit-scrollbar {
     background-color: var(--background);
 }
 
-.card {
-    border-radius: 50%;
-}
-
-.card-individual {
-    width: 20%;
-}
-
-@media only screen and (max-width:991px) {
+.card-individual-image {
 
 }
+
+
+
+
+
+
+
+
