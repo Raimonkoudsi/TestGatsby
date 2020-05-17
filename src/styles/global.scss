@@ -8,7 +8,7 @@ $background: #292929;
 $green: #43631D;
 
 body {
-    background-color: white;
+    background-color: black;
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
@@ -337,6 +337,8 @@ body::-webkit-scrollbar {
     padding-bottom: 40px;
     font-size: 40px;
     font-family: 'Teko', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
@@ -421,10 +423,6 @@ body::-webkit-scrollbar {
     top: 0px;
     text-align: center;
     margin-top: 6%;
-}
-
-.area {
-    //background-color: $background;
 }
 
 .space-background {
@@ -674,6 +672,10 @@ $social-button-transition: 0.5s ease all;
       .facebook {
         -webkit-mask: url(../imgs/svg/facebook.svg) no-repeat 100% 100%;
       }
+
+      .tumblr {
+        -webkit-mask: url(../imgs/svg/tumblr.svg) no-repeat 100% 100%;
+      }
     }
   }
 
@@ -694,26 +696,92 @@ $social-button-transition: 0.5s ease all;
 .header-contact {
     color: $secondary;
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     text-align: center;
     font-size: 300%;
     font-family: 'Squada One',sans-serif;
 }
 
+.text-contact {
+    color: white;
+    opacity: 0.8;
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    a {
+        opacity: 1;
+        color: $secondary;
+        text-decoration: none;
+        
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.align-footer {
+    text-align: center;
+    margin-top: 120px;
+}
 
 .footer {
 
     display: inline-grid;
-    grid-template-columns: repeat(3, minmax(25%,200px));
+    grid-template-columns: repeat(3, minmax(25%,400px));
     grid-gap: 0 10%;
     text-align: center;
     justify-content: center;
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
-.align-footer {
-
+.footer-copy {
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
 }
+
+.footer-legacy a {
+
+        text-decoration: none;
+        color: $secondary;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+        font-family: 'Teko', sans-serif;
+        margin-bottom: 0;
+        text-align: center;
+        display: inline-block;
+        
+
+        &:hover {
+            opacity: 0.6;
+        }
+    
+}
+
+
+@media only screen and (min-width:0px) and (max-width: 767px) {
+
+    .footer-legacy a {
+        font-size: 25px;
+    }
+
+    .footer-copy {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
 
 

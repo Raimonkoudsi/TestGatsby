@@ -3,8 +3,6 @@ import {Navbar, Nav} from 'react-bootstrap';
 
 import Icono from "../imgs/header/wallbang-logo.png";
 
-import ReactDOM from "react-dom";
-
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
@@ -14,8 +12,6 @@ class Menu extends React.Component {
 
     }
         render(){
-        //const {isShow} = this.props.isShow;
-        var booleano=this.props.variable;
 
         return(
         <Navbar className="fixed-top sticky-top navbar-dark headerWallbang" expand="lg">
@@ -25,9 +21,8 @@ class Menu extends React.Component {
             <Nav className="mr-auto">
             </Nav>
             <Nav.Link><NavLink to="#about" exact smooth className={this.props.variable ? "headerActive" : "headerLinks"}>About</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="#about" exact smooth activeClassName="headerActive" className="headerLinks">Team</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="#about" exact smooth activeClassName="headerActive" className="headerLinks">About</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="#about" exact smooth activeClassName="headerActive" className="headerLinks">About</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="#team" exact smooth className={this.props.variableTeam ? "headerActive" : "headerLinks"}>Team</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="#contact" exact smooth className={this.props.variableContact ? "headerActive" : "headerLinks"}>Contact</NavLink></Nav.Link>
         </Navbar.Collapse>
         </Navbar>
         )
