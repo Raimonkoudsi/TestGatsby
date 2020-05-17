@@ -2,11 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
-:root {
-    --secondary: #598426;
-    --background: #292929;
-    --green: #43631D;
-}
+
+$secondary: #598426;
+$background: #292929;
+$green: #43631D;
 
 body {
     background-color: white;
@@ -41,9 +40,10 @@ body::-webkit-scrollbar {
 }
 
 .navbar-brand {
-    width: 30%;
+    width: 25%;
     margin-right: 0;
     margin-bottom: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,28 +54,37 @@ body::-webkit-scrollbar {
   }
 
 .headerLinks {
+    margin: 0;
+    padding: 0;
     font-size: 120%;
-    padding-left: 10px;
-    padding-right: 10px;
     color: white;
     margin: 10px;
     text-decoration: none;
     font-family: 'Righteous', cursive;
 }
 
-.headerLinks:hover {
-    color: var(--secondary);
+.headerActive {
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+    color: $secondary;
+    margin: 10px;
     text-decoration: none;
     font-family: 'Righteous', cursive;
 }
 
-.headerLinks p {
-    color: white;
+.headerLinks:hover {
+    color: $secondary;
+    text-decoration: none;
 }
 
-.headerActive p {
-    color: yellow;
+.headerActive:hover {
+    color: $secondary;
+    text-decoration: none;
 }
+
+
+
 
 
 
@@ -119,7 +128,7 @@ body::-webkit-scrollbar {
     margin-bottom: 10px;
     font-size: 30px;
     font-family: 'Righteous', cursive;
-    background-color: var(--background);
+    background-color: $background;
     border-color: transparent;
     border-color: black;
 
@@ -127,8 +136,7 @@ body::-webkit-scrollbar {
 }
 
 .btn-title:hover {
-    background-color: var(--green);
-    background: var(--green);
+    background-color: $green;
     border-color: black;
 }
 
@@ -137,6 +145,12 @@ body::-webkit-scrollbar {
     padding: 0;
 
 }
+
+.space-header-about{
+    padding-top: 65px;
+    background-color: transparent;
+}
+
 
 /* BACKGROUND PARALLAX*/
 .bg-title {
@@ -303,12 +317,14 @@ body::-webkit-scrollbar {
 
 /* about */
 .page-about {
-    background: var(--background);
+    margin: 0;
+    padding-top: 25px;
+    background: $background;
 }
 
 .header-repositories {
-    color: var(--secondary);
-    padding-top: 40px;
+    color: $secondary;
+    margin-top: 5px;
 
     text-align: center;
     font-size: 300%;
@@ -359,7 +375,7 @@ body::-webkit-scrollbar {
 
 .title-repositories {
     font-family: 'Squada One',sans-serif;
-    color: var(--secondary);
+    color: $secondary;
     font-size: 35px;
     margin-bottom: 5px;
 }
@@ -408,11 +424,11 @@ body::-webkit-scrollbar {
 }
 
 .area {
-    background-color: var(--background);
+    //background-color: $background;
 }
 
-.area2 {
-    z-index: 100;
+.space-background {
+    background-color: $background;
 }
 
 .bgTextAlignRight {
@@ -535,27 +551,36 @@ body::-webkit-scrollbar {
 
 /* MEMBERS */
 
-.container-team {
+.page-team {
+    z-index: 10;
+    margin: 0;
+    margin-top: -32px;
+    background-color: $background;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
+.header-team {
+    color: $secondary;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Squada One',sans-serif;
 }
   
 .cards {
-    background-color: var(--background);
-    z-index: 10;
-    margin-top: -26px;
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-
-
-    position: relative;
     width: 100%;
     display: inline-grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw,1fr));
-    grid-gap: 0 10%;
+    grid-template-columns: repeat(auto-fill, minmax(220px,160px));
+    grid-gap: 0 12%;
     margin-left: 0;
 
     text-align: center;
+    justify-content: center;
+    margin: 0;
 }
 
 .card-image {
@@ -568,7 +593,7 @@ body::-webkit-scrollbar {
 
     border-radius: 50%;
 
-    border: 10px solid white;
+    border: 8px solid white;
 }
 
 .card-image:hover {
@@ -576,18 +601,119 @@ body::-webkit-scrollbar {
     filter: grayscale(0%);
 }
 
-.card-description {
-    background-color: var(--background);
+.card-individual .card-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Squada One',sans-serif;
+    color: white;
+    font-size: 36px;
 }
 
-.card-individual-image {
-
+.card-individual .card-description {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 26px;
+    opacity: 0.5;
+    margin: 0;
 }
 
 
+$social-button-transition: 0.5s ease all;
+
+    .rounded-social-buttons {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 60px;
+
+  
+    .circle-button {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 2.2rem;
+        height: 2.2rem;
+        border: .125rem solid transparent;
+        padding: 0;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: normal;
+        line-height: 2em;
+        border-radius: 1.6875rem;
+        transition: $social-button-transition;
+        margin-right: .25rem;
+        background-color: $background;
+        text-align: center;
+
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+      
+      &:hover {
+        transform: rotate(360deg);
+        background-color: $green;
+    }
+
+    .img-social {
+        background: #fff;
+        height: 25px;
+        width: 25px;
+        transition: 0.5s;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      .twitter {
+        -webkit-mask: url(../imgs/svg/twitter.svg) no-repeat 100% 100%;
+      }
+
+      .facebook {
+        -webkit-mask: url(../imgs/svg/facebook.svg) no-repeat 100% 100%;
+      }
+    }
+  }
 
 
 
 
+
+  /*CONTACT */
+  .page-contact {
+    z-index: 10;
+    margin: 0;
+    margin-top: -32px;
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.header-contact {
+    color: $secondary;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Squada One',sans-serif;
+}
+
+
+.footer {
+
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(25%,200px));
+    grid-gap: 0 10%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.align-footer {
+
+}
 
 
