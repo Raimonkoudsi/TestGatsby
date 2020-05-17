@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
 import bgCelda from '../imgs/background/3.png';
 import Title from './title';
@@ -15,7 +15,7 @@ import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
 
 
-class ParallaxBackground extends React.component {
+class ParallaxBackground extends Component {
 
   constructor(props) {
     super(props);

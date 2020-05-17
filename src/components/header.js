@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import {Navbar, Nav} from 'react-bootstrap';
 
 import Icono from "../imgs/header/wallbang-logo.png";
@@ -6,7 +6,7 @@ import Icono from "../imgs/header/wallbang-logo.png";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
-class Menu extends React.component {
+class Menu extends Component {
     constructor(props) {
         super(props);
 
