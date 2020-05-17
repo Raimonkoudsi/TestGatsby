@@ -6,7 +6,7 @@ import Icono from "../imgs/header/wallbang-logo.png";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
-class Menu extends React.Component {
+class Menu extends React.component {
     constructor(props) {
         super(props);
 
