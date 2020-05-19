@@ -15,7 +15,7 @@ import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
 
 
-class ParallaxBackground extends Component {
+class ParallaxBackground extends React.Component {
 
   constructor(props) {
     super(props);
