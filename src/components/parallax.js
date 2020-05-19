@@ -27,12 +27,17 @@ class ParallaxBackground extends React.Component {
       this.state = {width:  widthScreen, isShow: true, isShowTeam: true, isShowContact:true};
     }
 
-    //this.onResize();
+    this.onResize();
+    this.onMenu();
+    this.onMenu2();
+    this.onMenu3();
 
+    /*
     this.onResize= this.onResize.bind(this);
     this.onMenu=this.onMenu.bind(this);
     this.onMenu2=this.onMenu2.bind(this);
     this.onMenu3=this.onMenu3.bind(this);
+  */
 
   }
 
