@@ -17,7 +17,7 @@ class Menu extends React.Component {
 
         return(
         <Navbar className="fixed-top sticky-top navbar-dark headerWallbang" expand="lg">
-        <Navbar.Brand><NavLink to="#home" exact smooth activeClassName="selected"><img src={Icono} alt="wallbang" title="Wallbang Studios" className="navbar-brand"></img></NavLink></Navbar.Brand>
+        <Navbar.Brand><Link to="#home" exact smooth activeClassName="selected"><img src={Icono} alt="wallbang" title="Wallbang Studios" className="navbar-brand"></img></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
