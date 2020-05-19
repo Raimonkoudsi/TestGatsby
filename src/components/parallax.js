@@ -125,8 +125,11 @@ class ParallaxBackground extends React.Component {
     <div>
 
       <ReactResizeDetector handleWidth handleHeight onResize={this.onResize}> 
-        <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>
-        <Parallax pages={offset} scrolling={true} vertical ref={ref => (this.parallax = ref)}>
+      {this.state.isShow && this.state.isShowTeam && this.state.isShowContact
+  && (
+    <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>
+  )
+}        <Parallax pages={offset} scrolling={true} vertical ref={ref => (this.parallax = ref)}>
 
         <ParallaxLayer offset={0} speed={-1}>
             <div className="bg-parallax">
