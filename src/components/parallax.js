@@ -109,8 +109,6 @@ class ParallaxBackground extends React.Component {
 
     render(){
       var offset=this.offsetY;
-      var aboutVisible=this.isShow;
-      var widthh=this.state.width;
 
     return(
 
@@ -171,12 +169,6 @@ class ParallaxBackground extends React.Component {
 
             </div>
           </ParallaxLayer>
-
-            <ParallaxLayer offset={4} speed={0}>
-              <span>Window size: {offset}</span>
-                <span>{widthh}</span>
-              <span>Window size: {aboutVisible}</span>
-            </ParallaxLayer>
 
         </Parallax>
 
