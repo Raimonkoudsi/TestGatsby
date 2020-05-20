@@ -140,6 +140,8 @@ class ParallaxBackground extends React.Component {
         {menuCharge()}        
         <Parallax pages={offset} scrolling={true} vertical ref={ref => (this.parallax = ref)}>
 
+        <div  id="home"></div>
+
         <ParallaxLayer offset={0} speed={-1}>
             <div className="bg-parallax">
               <img src={bgCelda} className="bg-title" />
