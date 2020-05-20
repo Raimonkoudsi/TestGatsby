@@ -118,27 +118,26 @@ class ParallaxBackground extends React.Component {
 
 
 
-  menuCharge = () => {
-    if (this.state.isShow!='undefined' || this.state.isShowTeam!='undefined' || this.state.isShowContact!='undefined') {
-      this.menu = <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>;
-    } else {
-      this.menu = null;
-    }
 
-    return this.menu;
-  }
 
 
     render(){
       var offset=this.offsetY;
-      let menu=this.menu;
+
+      const menuCharge = () => {
+        if (this.state.isShow!=='undefined' || this.state.isShowTeam!=='undefined' || this.state.isShowContact!=='undefined') {
+          return <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>;
+        } else {
+          return <Header />;
+        }
+      }
 
     return(
 
     <div>
 
       <ReactResizeDetector handleWidth handleHeight onResize={this.onResize}> 
-        {menu}        
+        {menuCharge()}        
         <Parallax pages={offset} scrolling={true} vertical ref={ref => (this.parallax = ref)}>
 
         <ParallaxLayer offset={0} speed={-1}>
