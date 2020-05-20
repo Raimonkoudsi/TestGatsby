@@ -125,7 +125,7 @@ class ParallaxBackground extends React.Component {
       var offset=this.offsetY;
 
       const menuCharge = () => {
-        if (this.state.isShow!=='undefined' || this.state.isShowTeam!=='undefined' || this.state.isShowContact!=='undefined') {
+        if (this.state) {
           return <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>;
         } else {
           return <Header />;
