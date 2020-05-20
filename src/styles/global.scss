@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
+
 }
 
 body::-webkit-scrollbar {
@@ -541,6 +541,11 @@ body::-webkit-scrollbar {
 
 
 /* MEMBERS */
+
+.space-header-team{
+    padding-top: 65px;
+    background-color: $background;
+}
 
 .page-team {
     z-index: 10;

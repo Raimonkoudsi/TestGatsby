@@ -7,7 +7,7 @@ export default () => {
 
     return(
         <div className="page-team">
-                <h2 className="header-team">OUR AMAZING TEAM</h2>
+                <h2 className="header-team space-header-team">OUR AMAZING TEAM</h2>
                 <div className="cards">
                         <div className="card-individual">
                                 <img src={Arturo} className="card-image" />

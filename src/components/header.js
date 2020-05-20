@@ -24,9 +24,9 @@ class Menu extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
             </Nav>
-            <Nav.Link><Link to="#about" className={this.props.variable ? "headerActive" : "headerLinks"}>About</Link></Nav.Link>
-            <Nav.Link><Link to="#team" className={this.props.variableTeam ? "headerActive" : "headerLinks"}>Team</Link></Nav.Link>
-            <Nav.Link><Link to="#contact" className={this.props.variableContact ? "headerActive" : "headerLinks"}>Contact</Link></Nav.Link>
+            <Nav.Link href="#about" className={this.props.variable ? "headerActive" : "headerLinks"}>About</Nav.Link>
+            <Nav.Link href="#team" className={this.props.variableTeam ? "headerActive" : "headerLinks"}>Team</Nav.Link>
+            <Nav.Link href="#contact" className={this.props.variableContact ? "headerActive" : "headerLinks"}>Contact</Nav.Link>
         </Navbar.Collapse>
         </Navbar>
         )
