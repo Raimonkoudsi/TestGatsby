@@ -60,6 +60,12 @@ body::-webkit-scrollbar {
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 399px) and (min-width: 200px) {
+    .parallax__layer{
+        margin-left:-500px;
+    }
+    }
   
   .parallax__cover{
     background: #2D112B;
@@ -146,17 +152,19 @@ body::-webkit-scrollbar {
 /*TITLE*/
 .header{
     margin-top: -100px;
-    height: 80%;
+    height: 90vh;
 }
 
 .title-header img {
     width: 100%;
     display:block;
     margin:auto;
+
 }
 
 .title-header {
     text-align: center;
+    margin-top: 200px;
 }
 
 .text-title {
@@ -166,6 +174,7 @@ body::-webkit-scrollbar {
     font-family: 'Squada One',sans-serif;
     opacity: 0.9;
     margin: 0px;
+
 }
 
 .text-title span {
