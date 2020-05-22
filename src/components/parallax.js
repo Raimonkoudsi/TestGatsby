@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
 import bgCelda from '../imgs/background/3.png';
 import Title from './title';
 import Slider from './slider';
@@ -11,7 +10,7 @@ import Contact from './contact';
 //CAMBIOS DE ANCHURA
 import ReactResizeDetector from 'react-resize-detector';
 
-import { Spring } from "react-spring/renderprops";
+
 import VisibilitySensor from "react-visibility-sensor";
 
 
@@ -137,66 +136,8 @@ class ParallaxBackground extends React.Component {
     <div>
 
       <ReactResizeDetector handleWidth handleHeight onResize={this.onResize}> 
-        {menuCharge()}        
-        <Parallax pages={offset} scrolling={true} vertical ref={ref => (this.parallax = ref)}>
-
-        <div  id="home"></div>
-
-        <ParallaxLayer offset={0} speed={-1}>
-            <div className="bg-parallax">
-              <img src={bgCelda} className="bg-title" />
-            </div>
-          </ParallaxLayer>
-
-
-
-          <ParallaxLayer offset={0} speed={-0.4}>
-            <div className="bg-parallax">
-              <img src={bgCelda} className="bg-title" />
-            </div>
-          </ParallaxLayer>
-
-
-
-
-          <ParallaxLayer offset={0.05} speed={1}>
-            <Title />
-          </ParallaxLayer>
-
-
-          <ParallaxLayer offset={1} speed={0}>
-            <div className="area">
-
-              <VisibilitySensor partialVisibility minTopValue={300} offset={{top:290}} onChange={this.onMenu} >
-                {({ isVisible }) => (
-                  <Spring delay={200} to={{ opacity: isVisible ? 1 : 1 }}>
-                    {({ opacity }) => <div className="space-header-about" style={{opacity}} id="about"><div className="space-background"><About /><div classname="area2"><Slider /></div></div></div>}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-
-              <VisibilitySensor partialVisibility minTopValue={400} offset={{top:200}} onChange={this.onMenu2} >
-                {({ isVisible }) => (
-                  <Spring delay={200} to={{ opacity: isVisible ? 1 : 1 }}>
-                    {({ opacity }) => <div style={{opacity}} id="team"><Team /></div>}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-
-              <VisibilitySensor partialVisibility minTopValue={490} offset={{top:200}}  onChange={this.onMenu3} >
-                {({ isVisible }) => (
-                  <Spring delay={200} to={{ opacity: isVisible ? 1 : 1 }}>
-                    {({ opacity }) => <div style={{opacity}} id="contact"><Contact /></div>}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-
-            </div>
-          </ParallaxLayer>
-
-        </Parallax>
-
-      </ReactResizeDetector>
+        {menuCharge()}
+        </ReactResizeDetector>
    
     </div>
     )

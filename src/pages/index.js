@@ -1,15 +1,52 @@
 import React from "react";
-import Parallax from "../components/parallax";
+
+import Title from '../components/title';
+import Slider from '../components/slider';
+import About from '../components/about';
+import Team from '../components/team';
+import Header from '../components/header';
+import Contact from '../components/contact';
+
+import bgCelda from '../imgs/background/3.png';
+
+import { Parallax, Background } from 'react-parallax';
 
 
-export default () => (
+
+class Index extends React.Component {
+
+
+    render(){
+
+        return(
+            <div>
+
+            <Header />
+
+            <div class="parallax">
+                <div class="parallax__layer parallax__layer__0">
+                    <img src={bgCelda} />
+                </div>
 
 
 
-    <div>
-        <Parallax />
-    </div>
+            <Title />
 
-)
+
+
+
+                <About />
+                <Slider />
+                <Team />
+                <Contact />
+
+                </div>
+            </div>
+
+        );
+    };
+
+}
+export default Index;
 
 

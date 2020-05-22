@@ -21,6 +21,64 @@ body::-webkit-scrollbar {
 
 
 
+  .parallax {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .parallax__layer{
+    position: absolute;
+    height: 50vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    width:3000px;
+
+    margin: 0;
+    padding: 0;
+    margin-left:-600px;
+    margin-top: 500px;
+
+    img{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      z-index: -10;
+      margin: 0;
+      margin-left: -200px;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  
+  .parallax__cover{
+    background: #2D112B;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+    width: 100%;
+  }
+
+  .parallax__layer__0 {
+    transform: translateZ(-100px) scale(1);
+    height: 85vh;
+  }
+  
+
 
 
 /*HEADER MENU*/
@@ -36,7 +94,7 @@ body::-webkit-scrollbar {
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     top: 0; /* At the top */
-    z-index: 99;
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -87,7 +145,8 @@ body::-webkit-scrollbar {
 
 /*TITLE*/
 .header{
-    margin-top: 25%;
+    margin-top: -100px;
+    height: 80%;
 }
 
 .title-header img {

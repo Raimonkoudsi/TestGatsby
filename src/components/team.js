@@ -3,6 +3,8 @@ import React from "react";
 import Arturo from '../imgs/team/1.jpg';
 
 
+
+
 export default () => {
 
     return(
