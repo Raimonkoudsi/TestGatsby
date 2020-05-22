@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
 
   .parallax__layer__0 {
     transform: translateZ(-100px) scale(1);
-    height: 85vh;
+    height: 70vh;
   }
 
   .parallax__layer__1 {
@@ -156,20 +156,20 @@ body::-webkit-scrollbar {
 
 /*TITLE*/
 .header{
-
-    height: 90vh;
+    height: 95vh;
 }
 
 .title-header img {
     width: 100%;
     display:block;
     margin:auto;
+    padding-top: 30vh;
 
 }
 
 .title-header {
     text-align: center;
-    margin-top: 200px;
+
 }
 
 .text-title {
@@ -237,7 +237,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (min-width: 800px) {
     .header{
-        margin-top: 20%;
+        //margin-top: 20%;
     }
     .title-header img {
         width: 100%;
@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (min-width: 900px) {
     .header{
-        margin-top: 20%;
+        //margin-top: 20%;
     }
     .title-header img {
         width: 70%;
@@ -258,7 +258,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (min-width: 1000px) {
     .header{
-        margin-top: 18%;
+        //margin-top: 18%;
     }
     .title-header img {
         width: 70%;
@@ -267,7 +267,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (min-width: 1200px) {
     .header{
-        margin-top: 13%;
+        //margin-top: 13%;
     }
     .title-header img {
         width: 70%;
@@ -277,7 +277,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
     .header{
-        margin-top: 28%;
+        //margin-top: 28%;
     }
     .bg-parallax {
         top: -60px;
@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .header{
-        margin-top: 40%;
+        //margin-top: 40%;
     }
     .bg-parallax {
         top: -60px;
@@ -312,7 +312,7 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 399px) and (min-width: 200px) {
     .header{
         padding-top: 15%;
-        margin-bottom: 20%;
+        //margin-bottom: 20%;
     }
     .bg-parallax {
         top: -60px;
