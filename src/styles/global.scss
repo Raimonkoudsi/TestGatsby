@@ -162,14 +162,23 @@ body::-webkit-scrollbar {
 .title-header img {
     width: 100%;
     display:block;
-    margin:auto;
-    padding-top: 30vh;
-
 }
 
 .title-header {
     text-align: center;
+    padding-top: 30vh;
+}
 
+@media only screen and (max-height: 500px) and (min-height: 100px) and (min-width: 200px) {
+    .title-header {
+        padding-top: 10vh;
+    }
+}
+
+@media only screen and (max-height: 550px) and (min-height: 100px) and (min-width: 200px) {
+    .title-header {
+        padding-top: 20vh;
+    }
 }
 
 .text-title {
