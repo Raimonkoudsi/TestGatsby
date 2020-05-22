@@ -688,7 +688,6 @@ $social-button-transition: 0.5s ease all;
         width: 100%;
         text-align: center;
         margin: 0;
-        margin-bottom: 60px;
 
   
     .circle-button {
@@ -757,6 +756,7 @@ $social-button-transition: 0.5s ease all;
     position: relative;
     padding-top: 40px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .header-contact {
@@ -797,11 +797,11 @@ $social-button-transition: 0.5s ease all;
 
     display: inline-grid;
     grid-template-columns: repeat(3, minmax(25%,400px));
-    grid-gap: 0 10%;
+    grid-gap: 0 5%;
     text-align: center;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
 
