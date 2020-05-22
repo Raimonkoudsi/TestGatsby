@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     width: 100%;
+    scroll-behavior: smooth;
   }
   
   .parallax__layer{
@@ -155,7 +156,7 @@ body::-webkit-scrollbar {
 
 /*TITLE*/
 .header{
-    margin-top: -100px;
+
     height: 90vh;
 }
 
@@ -310,7 +311,8 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 399px) and (min-width: 200px) {
     .header{
-        margin-top: 20%;
+        padding-top: 15%;
+        margin-bottom: 20%;
     }
     .bg-parallax {
         top: -60px;
@@ -332,7 +334,7 @@ body::-webkit-scrollbar {
 
 
 
-/* telefono horizontal */
+/* telefono horizontal */ /*
 @media only screen and (max-height: 400px) and (min-height: 100px) and (min-width: 500px) {
     .header{
         margin-top: 8%;
@@ -370,6 +372,7 @@ body::-webkit-scrollbar {
         width: 200px;
     }
 }
+*/
 /**/
 
 
@@ -667,6 +670,10 @@ body::-webkit-scrollbar {
 .card-image:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+}
+
+.card-individual {
+    margin-bottom: 20%;
 }
 
 .card-individual .card-title {
