@@ -15,7 +15,7 @@ body {
 
 }
 
-html, body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
     overflow: hidden;
   }
@@ -24,7 +24,7 @@ html, body::-webkit-scrollbar {
 
   .parallax {
     perspective: 100px;
-    height: 100vh;
+    height:100%;
     overflow-x: hidden;
     overflow-y: auto;
     position: absolute;
@@ -84,6 +84,10 @@ html, body::-webkit-scrollbar {
     transform: translateZ(-100px) scale(1);
     height: 85vh;
   }
+
+  .parallax__layer__1 {
+    transform: translateZ(100%);
+  }
   
 
 
@@ -100,7 +104,6 @@ html, body::-webkit-scrollbar {
     overflow: hidden;
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
-    top: 0; /* At the top */
     z-index: 1;
 }
 

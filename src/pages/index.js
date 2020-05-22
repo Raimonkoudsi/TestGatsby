@@ -21,9 +21,14 @@ class Index extends React.Component {
         return(
             <div>
 
-            <Header />
+
 
             <div class="parallax">
+
+            <Header />
+                    
+
+
                 <div class="parallax__layer parallax__layer__0">
                     <img src={bgCelda} />
                 </div>
