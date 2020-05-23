@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     left: 0;
     z-index: -10;
-    width:3000px;
+    width:250%;
 
     margin: 0;
     padding: 0;
@@ -62,6 +62,12 @@ body::-webkit-scrollbar {
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 700px) and (min-width: 400px) {
+    .parallax__layer{
+        width:3000px;
+    }
+    }
 
   @media only screen and (max-width: 399px) and (min-width: 200px) {
     .parallax__layer{
@@ -157,16 +163,21 @@ body::-webkit-scrollbar {
 /*TITLE*/
 .header{
     height: 95vh;
+
 }
 
 .title-header img {
     width: 100%;
     display:block;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-header {
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 25vh;
 }
 
 @media only screen and (max-height: 500px) and (min-height: 100px) and (min-width: 200px) {

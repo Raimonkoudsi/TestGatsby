@@ -23,7 +23,7 @@ class Index extends React.Component {
 
             var widthScreen = (window.innerWidth > 0) ? window.innerWidth : 0;
       
-            this.state = {width:  widthScreen, isShow: true, isShowTeam: true, isShowContact:true};
+            this.state = {width:  widthScreen, isShow: true, isShowActive: true, isShowTeam: true,isShowTeamActive:true, isShowContact:true, isShowContactActive:true};
         }
     
         this.onMenu();
