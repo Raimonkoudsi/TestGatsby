@@ -1,20 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
 import {Navbar, Nav} from 'react-bootstrap';
 
 import Icono from "../imgs/header/wallbang-logo.png";
 
-//import { NavHashLink as NavLink } from 'react-router-hash-link';
-
-import { Link } from '@reach/router';
-
-//import Scrollchor from 'react-scrollchor';
-
 
 class Menu extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
         render(){
 
         return(

@@ -66,7 +66,7 @@ class Index extends React.Component {
 
 
                 <div class="parallax__layer parallax__layer__0">
-                    <img src={bgCelda} />
+                    <img src={bgCelda} alt="" />
                 </div>
 
 

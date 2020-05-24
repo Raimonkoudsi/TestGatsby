@@ -1,7 +1,5 @@
 import React from "react";
 
-import Arturo from '../imgs/team/1.jpg';
-
 
 export default () => {
 
@@ -15,13 +13,13 @@ export default () => {
             <div className="footer">
                 <p className="footer-copy">Copyright © Your Website 2018</p>
                     <span className="rounded-social-buttons">
-                        <a className="circle-button" href="https://twitter.com/CatarsisTheGame"  target="_blank" rel="nofollow noopener" title="Twitter"><div className="img-social twitter" /></a>
-                        <a className="circle-button" href="https://catarsisthegame.tumblr.com"  target="_blank" rel="nofollow noopener" title="Tumblr"><div className="img-social tumblr" /></a>
-                        <a className="circle-button" href="https://www.facebook.com/jocrod11"  target="_blank" rel="nofollow noopener" title="Facebook"><div className="img-social facebook" /></a>
+                        <a className="circle-button" href="https://twitter.com/CatarsisTheGame"  target="_blank" rel="nofollow noopener noreferrer" title="Twitter"><div className="img-social twitter" /></a>
+                        <a className="circle-button" href="https://catarsisthegame.tumblr.com"  target="_blank" rel="nofollow noopener noreferrer" title="Tumblr"><div className="img-social tumblr" /></a>
+                        <a className="circle-button" href="https://www.facebook.com/jocrod11"  target="_blank" rel="nofollow noopener noreferrer" title="Facebook"><div className="img-social facebook" /></a>
                     </span>
                     <div className="footer-legacy">
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms of Use</a>
+                        <a href="https://www.facebook.com/jocrod11">Privacy Policy</a>
+                        <a href="https://www.facebook.com/jocrod11">Terms of Use</a>
                     </div>
             </div>
             </div>

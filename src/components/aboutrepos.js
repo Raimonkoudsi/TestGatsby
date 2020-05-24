@@ -9,15 +9,15 @@ const Repo = (props) => {
 
     if(props.repo.image1===true)
     {
-        image1 = <img src={FirstImage} className="img-language"></img>;
+        image1 = <img src={FirstImage} alt="" className="img-language"></img>;
     }
     if(props.repo.image2===true)
     {
-        image2 = <img src={SecondImage} className="img-language"></img>;
+        image2 = <img src={SecondImage} alt="" className="img-language"></img>;
     }
     if(props.repo.image3===true)
     {
-        image3 = <img src={ThirdImage} className="img-language"></img>;
+        image3 = <img src={ThirdImage} alt="" className="img-language"></img>;
     }
 
     return (
