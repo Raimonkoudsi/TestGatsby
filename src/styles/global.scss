@@ -6,13 +6,14 @@
 $secondary: #598426;
 $background: #292929;
 $green: #43631D;
+$width: 3000px;
 
 body {
     background-color: black;
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -44,11 +45,11 @@ body::-webkit-scrollbar {
     bottom: 0;
     left: 0;
     z-index: -10;
-    width:250%;
+    width:$width;
 
     margin: 0;
     padding: 0;
-    margin-left:-600px;
+    text-align: center;
     margin-top: 500px;
 
     img{
@@ -57,23 +58,11 @@ body::-webkit-scrollbar {
       bottom: 0;
       z-index: -10;
       margin: 0;
-      margin-left: -200px;
       padding: 0;
       width: 100%;
+      text-align: center;
     }
   }
-
-  @media only screen and (max-width: 700px) and (min-width: 400px) {
-    .parallax__layer{
-        width:3000px;
-    }
-    }
-
-  @media only screen and (max-width: 399px) and (min-width: 200px) {
-    .parallax__layer{
-        margin-left:-500px;
-    }
-    }
   
   .parallax__cover{
     background: #2D112B;
@@ -82,18 +71,16 @@ body::-webkit-scrollbar {
     top: 100%;
     left: 0;
     right: 0;
-
+    text-align: center;
     z-index: 2;
     width: 100%;
+
   }
 
   .parallax__layer__0 {
-    transform: translateZ(-100px) scale(1);
+    transform: translateZ(-100px);
     height: 70vh;
-  }
-
-  .parallax__layer__1 {
-    transform: translateZ(100%);
+    left: calc(50% - #{$width / 2});
   }
   
 

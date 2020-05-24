@@ -9,8 +9,6 @@ import Contact from '../components/contact';
 
 import bgCelda from '../imgs/background/3.png';
 
-import { Parallax, Background } from 'react-parallax';
-
 import VisibilitySensor from "react-visibility-sensor";
 
 
@@ -50,7 +48,7 @@ class Index extends React.Component {
 
         const menuCharge = () => {
             if (this.state) {
-              return <Header variable={this.state.isShow} variableTeam={this.state.isShowTeam} variableContact={this.state.isShowContact}/>;
+              return <Header />;
             } else {
               return <Header />;
             }
