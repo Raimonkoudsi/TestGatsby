@@ -8,7 +8,7 @@ export default () => {
     return(
 
 
-    <div className="page-about" id="about">
+    <div className="page-about container-width" id="about">
             <header className="text-center">
                 <h2 className="header-repositories">ABOUT THE GAME</h2>
                 <h3 className="text-repositories">Catarsis is a Post-Apocaliptic Shoot n' fight where you live the broken politics and fight against the humans who transforms in their worst fears, as you try to recover any sign of identity within yourself.</h3>

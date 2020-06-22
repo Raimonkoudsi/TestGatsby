@@ -69,7 +69,6 @@ class Index extends React.Component {
                     <img src={bgCelda} alt="" />
                 </div>
 
-                <div className="container-width">
 
                   <Title />
 
@@ -85,7 +84,6 @@ class Index extends React.Component {
                       {() => <div id="contact"><Contact /></div>}
                   </VisibilitySensor>
 
-                </div>
               </div>
             </div>
 

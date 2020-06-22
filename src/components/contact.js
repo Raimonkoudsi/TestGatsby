@@ -4,7 +4,7 @@ import React from "react";
 export default () => {
 
     return(
-        <div className="page-contact">
+        <div className="page-contact container-width">
             <h2 className="header-contact">CONTACT</h2>
             <p className="text-contact">For Interviews, Inquires or Information contact us on <a href="mailto:wallbangstudios4.9@gmail.com">wallbangstudios4.9@gmail.com</a></p>
             <p className="text-contact">Regarding Catarsis, you can visit our PressKit or get in touch in the Social Media.</p>

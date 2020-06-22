@@ -8,7 +8,7 @@ import Arturo from '../imgs/team/1.jpg';
 export default () => {
 
     return(
-        <div className="page-team">
+        <div className="page-team container-width">
                 <h2 className="header-team space-header-team">OUR AMAZING TEAM</h2>
                 <div className="cards">
                         <div className="card-individual">

@@ -10,7 +10,7 @@ import slider3 from "../imgs/slider/3.png";
 export default () => (
 
 <div className="area">
-  <div className="container">
+  <div className="container container-width">
 
   <Carousel>
     <Carousel.Item>
