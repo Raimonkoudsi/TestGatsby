@@ -69,23 +69,24 @@ class Index extends React.Component {
                     <img src={bgCelda} alt="" />
                 </div>
 
+                <div className="container-width">
 
+                  <Title />
 
-            <Title />
+                  <VisibilitySensor partialVisibility minTopValue={300} offset={{top:290}} onChange={this.onMenu} >
+                      {() => <div className="space-header-about" id="about"><div className="space-background"><About /><div classname="area2"><Slider /></div></div></div>}
+                  </VisibilitySensor>
 
-                <VisibilitySensor partialVisibility minTopValue={300} offset={{top:290}} onChange={this.onMenu} >
-                    {() => <div className="space-header-about" id="about"><div className="space-background"><About /><div classname="area2"><Slider /></div></div></div>}
-                </VisibilitySensor>
+                  <VisibilitySensor partialVisibility minTopValue={400} offset={{top:200}} onChange={this.onMenu2} >
+                      {() => <div id="team"><Team /></div>}
+                  </VisibilitySensor>
 
-                <VisibilitySensor partialVisibility minTopValue={400} offset={{top:200}} onChange={this.onMenu2} >
-                    {() => <div id="team"><Team /></div>}
-                </VisibilitySensor>
-
-                <VisibilitySensor partialVisibility minTopValue={490} offset={{top:200}}  onChange={this.onMenu3} >
-                    {() => <div id="contact"><Contact /></div>}
-                </VisibilitySensor>
+                  <VisibilitySensor partialVisibility minTopValue={490} offset={{top:200}}  onChange={this.onMenu3} >
+                      {() => <div id="contact"><Contact /></div>}
+                  </VisibilitySensor>
 
                 </div>
+              </div>
             </div>
 
         );
