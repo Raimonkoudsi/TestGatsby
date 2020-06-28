@@ -8,6 +8,8 @@ $background: #292929;
 $green: #43631D;
 $width: 3000px;
 
+
+/*#region Body*/
 body {
     background-color: black;
     margin: 0;
@@ -19,15 +21,15 @@ body {
 body::-webkit-scrollbar {
     display: none;
     overflow: hidden;
-  }
+}
 
-  .container-width {
+.container-width {
       max-width: 1200px;
-  }
+}
 
 
 
-  .parallax {
+.parallax {
     perspective: 100px;
     height:100%;
     overflow-x: hidden;
@@ -39,9 +41,9 @@ body::-webkit-scrollbar {
     bottom: 0;
     width: 100%;
     scroll-behavior: smooth;
-  }
+}
   
-  .parallax__layer{
+.parallax__layer{
     position: absolute;
     //height: 50vh;
     top: 0;
@@ -66,9 +68,9 @@ body::-webkit-scrollbar {
       width: 100%;
       text-align: center;
     }
-  }
+}
   
-  .parallax__cover{
+.parallax__cover{
     background: #2D112B;
     display: block;
     position: absolute;
@@ -78,19 +80,17 @@ body::-webkit-scrollbar {
     text-align: center;
     z-index: 2;
     width: 100%;
+}
 
-  }
-
-  .parallax__layer__0 {
+.parallax__layer__0 {
     transform: translateZ(-100px);
     height: 70vh;
     left: -55vw;
-  }
-  
+}
+/*#endregion */
 
 
-
-/*HEADER MENU*/
+/*#region Header*/
 
 .headerWallbang {
     background-color: black;
@@ -148,10 +148,10 @@ body::-webkit-scrollbar {
     color: $secondary;
     text-decoration: none;
 }
+/*#endregion */
 
 
-
-/*TITLE*/
+/*#region Title*/
 .header{
     height: 95vh;
 
@@ -247,9 +247,6 @@ body::-webkit-scrollbar {
 
 
 @media only screen and (min-width: 800px) {
-    .header{
-        //margin-top: 20%;
-    }
     .title-header img {
         width: 100%;
     }
@@ -259,27 +256,18 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 900px) {
-    .header{
-        //margin-top: 20%;
-    }
     .title-header img {
         width: 70%;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .header{
-        //margin-top: 18%;
-    }
     .title-header img {
         width: 70%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .header{
-        //margin-top: 13%;
-    }
     .title-header img {
         width: 70%;
     }
@@ -287,9 +275,6 @@ body::-webkit-scrollbar {
 
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
-    .header{
-        //margin-top: 28%;
-    }
     .bg-parallax {
         top: -60px;
     }
@@ -304,9 +289,6 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
-    .header{
-        //margin-top: 40%;
-    }
     .bg-parallax {
         top: -60px;
     }
@@ -323,7 +305,6 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 399px) and (min-width: 200px) {
     .header{
         padding-top: 15%;
-        //margin-bottom: 20%;
     }
     .bg-parallax {
         top: -60px;
@@ -342,59 +323,10 @@ body::-webkit-scrollbar {
         width: 200px;
     }
 }
+/*#endregion */
 
 
-
-/* telefono horizontal */ /*
-@media only screen and (max-height: 400px) and (min-height: 100px) and (min-width: 500px) {
-    .header{
-        margin-top: 8%;
-    }
-
-
-    .title-header img {
-        width: 50%;
-    }
-
-    .text-title {
-        font-size: 4vw;
-    }
-
-    .btn-title {
-        width: 200px;
-    }
-}
-
-@media only screen and (max-height: 480px) and (min-height: 401px)  and (min-width: 500px)  {
-    .header{
-        margin-top: 15%;
-    }
-
-
-    .title-header img {
-        width: 50%;
-    }
-
-    .text-title {
-        font-size: 4vw;
-    }
-
-    .btn-title {
-        width: 200px;
-    }
-}
-*/
-/**/
-
-
-
-
-
-
-
-
-
-/* about */
+/*#region About*/
 .page-about {
     margin: 0;
     padding-top: 25px;
@@ -482,11 +414,10 @@ body::-webkit-scrollbar {
         font-size: 30px;
     }
 }
+/*#endregion */
 
 
-
-
-/*carousel */
+/*#region Carousel*/
 
 .carousel-caption {
     bottom:0px;
@@ -570,13 +501,6 @@ body::-webkit-scrollbar {
     font-family: 'Teko', sans-serif;
 }
 
-/*
-@media only screen and (max-width: 600px) {
-    .textCarousel {
-        font-size: 14px;
-    }
-}
-*/
 @media only screen and (min-width:991px) {
     .titleCarousel
     {
@@ -619,15 +543,10 @@ body::-webkit-scrollbar {
         display: none;
     }
 }
+/*#endregion */
 
 
-
-
-
-
-
-/* MEMBERS */
-
+/*#region Members*/
 .space-header-team{
     padding-top: 65px;
     background-color: $background;
@@ -705,10 +624,10 @@ body::-webkit-scrollbar {
 
 $social-button-transition: 0.5s ease all;
 
-    .rounded-social-buttons {
-        width: 100%;
-        text-align: center;
-        margin: 0;
+.rounded-social-buttons {
+    width: 100%;
+    text-align: center;
+    margin: 0;
 
   
     .circle-button {
@@ -734,43 +653,41 @@ $social-button-transition: 0.5s ease all;
         margin-left: 8px;
         margin-right: 8px;
         margin-top: 10px;
-      
-      &:hover {
-        transform: rotate(360deg);
-        background-color: $green;
+        
+        &:hover {
+            transform: rotate(360deg);
+            background-color: $green;
+        }
+
+        .img-social {
+            background: #fff;
+            height: 25px;
+            width: 25px;
+            transition: 0.5s;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .twitter {
+            -webkit-mask: url(../imgs/svg/twitter.svg) no-repeat 100% 100%;
+        }
+
+        .facebook {
+            -webkit-mask: url(../imgs/svg/facebook.svg) no-repeat 100% 100%;
+        }
+
+        .tumblr {
+            -webkit-mask: url(../imgs/svg/tumblr.svg) no-repeat 100% 100%;
+        }
     }
-
-    .img-social {
-        background: #fff;
-        height: 25px;
-        width: 25px;
-        transition: 0.5s;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        color: white;
-      }
-
-      .twitter {
-        -webkit-mask: url(../imgs/svg/twitter.svg) no-repeat 100% 100%;
-      }
-
-      .facebook {
-        -webkit-mask: url(../imgs/svg/facebook.svg) no-repeat 100% 100%;
-      }
-
-      .tumblr {
-        -webkit-mask: url(../imgs/svg/tumblr.svg) no-repeat 100% 100%;
-      }
-    }
-  }
+}
+/*#endregion */
 
 
-
-
-
-  /*CONTACT */
-  .page-contact {
+/*#region Contact*/
+.page-contact {
     z-index: 10;
     margin: 0;
     margin-top: -32px;
@@ -865,6 +782,7 @@ $social-button-transition: 0.5s ease all;
         font-size: 25px;
     }
 }
+/*#endregion */
 
 
 
