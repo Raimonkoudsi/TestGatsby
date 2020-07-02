@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 
 .container-width {
-      max-width: 1200px;
+    max-width: 1200px;
 }
 
 
@@ -331,6 +331,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding-top: 25px;
     background: $background;
+    margin: 0 auto;
 }
 
 .header-repositories {
@@ -361,7 +362,6 @@ body::-webkit-scrollbar {
     grid-template-rows: auto;
     grid-gap: 0 20px;
     margin-left: 0;
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -554,13 +554,12 @@ body::-webkit-scrollbar {
 
 .page-team {
     z-index: 10;
-    margin: 0;
-    margin-top: -32px;
     background-color: $background;
     position: relative;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 15vw;
     padding-right: 15vw;
+    margin: -30px auto;
 }
 
 .header-team {
@@ -695,6 +694,7 @@ $social-button-transition: 0.5s ease all;
     padding-top: 40px;
     width: 100%;
     margin-bottom: 20px;
+    margin: 0px auto;
 }
 
 .header-contact {

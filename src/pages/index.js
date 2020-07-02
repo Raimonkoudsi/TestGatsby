@@ -27,9 +27,6 @@ class Index extends React.Component {
         this.onMenu();
         this.onMenu2();
         this.onMenu3();
-
-
-    
       }
 
     onMenu = () => {
@@ -77,7 +74,7 @@ class Index extends React.Component {
                   </VisibilitySensor>
 
                   <VisibilitySensor partialVisibility minTopValue={400} offset={{top:200}} onChange={this.onMenu2} >
-                      {() => <div id="team"><Team /></div>}
+                      {() => <div className="space-background"><div id="team"><Team /></div></div>}
                   </VisibilitySensor>
 
                   <VisibilitySensor partialVisibility minTopValue={490} offset={{top:200}}  onChange={this.onMenu3} >
